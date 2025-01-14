@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="keranjang.css">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--Shorcut Icon-->
+    <link rel="Shorcut Icon" href="assets/images/Bakpia_Nobg.png">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">
+          <img src="assets/images/Bakpia_Nobg.png" alt="">
+        </div>
+        <div class="right">
+          <a onclick="window.location.href='halaman.html'">Home</a>
+          <a onclick="window.location.href='halaman.html'">Menu</a>
+          <a onclick="window.location.href='halaman.html'">About Us</a>
+          <a onclick="window.location.href='halaman.html'">Contact</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="search"><i data-feather="search"></i></a>
+          <a href="#" id="shooping"><i data-feather="shopping-cart"></i></a>
+          <a href="#" id="hamburger-menu="><i data-feather="menu"></i></a>
+        </div>
+        </nav>
+        <div class="menu-container">
+          <div class="menu-item" data-price="10000">
+              <img src="assets/images/bakpiachocoberry.jpg" alt="Nama Menu" class="menu-image">
+              <div class="menu-details">
+                  <h3 class="menu-name">-Cat-Cream Bread-</h3>
+                  <div class="menu-actions">
+                      <button class="quantity-btn minus">-</button>
+                      <span class="quantity">1</span>
+                      <button class="quantity-btn plus">+</button>
+                      <span class="price">Rp 10.000</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="total-container">
+          <span>Total: Rp <span id="total">10.000</span></span>
+          <button onclick="window.location.href='halaman.html'" class="pay-btn">Bayar</button>
+      </div>
+      
+</body>
+<script src="keranjang.js"></script>
+<script>
+  feather.replace();
+</script>
+</html>

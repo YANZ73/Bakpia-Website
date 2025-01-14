@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FDF0E0;
+  }
+  
+  /* Navigasi */
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fcbc30;
+    color: white;
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  nav .left img {
+    width: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+  nav .right {
+    flex: 1;
+    text-align: left;
+    margin-right: 40px;
+    margin-left: 50px;
+    font-size: larger;
+  }
+  
+  nav .right a {
+    font-weight: bold;
+    color: #FDF0E0;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  nav .right a:hover {
+    color: #ecba80;
+  }
+  
+  nav .right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  nav .right a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-extra a {
+    color: #FDF0E0;
+    margin: 0 2rem;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  .navbar-extra a:hover {
+    color: #ecba80;
+  }
+  
+  body .menu-container{
+    background-color: #FDF0E0;
+    margin-top: 4rem;
+    border: #333 solid 3px;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 20px; 
+    margin-top: 3rem;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .menu-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .menu-details {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .menu-name {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .menu-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-btn {
+    background-color: #637090;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .quantity-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .quantity {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .price {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Gaya total dan tombol bayar */
+  .total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .total-container span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .pay-btn {
+    background-color: #637090;
+    color: #fdf0e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pay-btn:hover {
+    opacity: 0.9;
+  }
